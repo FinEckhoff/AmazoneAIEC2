@@ -14,10 +14,10 @@ print("Got Data")
 train_images = train_images.reshape(train_images.shape[0], 28, 28, 1).astype('float32')
 print("Loaded images")
 train_images = (train_images - 127.5) / 127.5 # Normalize the images to [-1, 1]
-
+print("Normed images")
 BUFFER_SIZE = 60000
 BATCH_SIZE = 256
-
+print("Create DF")
 # Batch and shuffle the data
 train_dataset = tf.data.Dataset.from_tensor_slices(train_images).shuffle(BUFFER_SIZE).batch(BATCH_SIZE)
 print("Loading done")
