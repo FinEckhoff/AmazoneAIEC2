@@ -26,7 +26,7 @@ def prepare():
 
 
 @app.route('/img')
-def plot():
+def img():
     global generator
     # Convert plot to image
     noise = tf.random.normal([1, 100])
