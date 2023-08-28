@@ -15,7 +15,7 @@ train_images = train_images.reshape(train_images.shape[0], 28, 28, 1).astype('fl
 print("Loaded images")
 train_images = (train_images - 127.5) / 127.5 # Normalize the images to [-1, 1]
 print("Normed images")
-BUFFER_SIZE = 60000
+BUFFER_SIZE = 600
 BATCH_SIZE = 256
 print("Create DF")
 # Batch and shuffle the data
