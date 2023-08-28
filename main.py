@@ -69,6 +69,7 @@ def home():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    print("start")
     if __name__ == "__main__":
         prepare()
         app.run(host='0.0.0.0', port=8088)
