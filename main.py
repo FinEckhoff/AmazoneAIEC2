@@ -16,8 +16,9 @@ def prepare():
     global generator
     import tensorflow as tf
     import imageGen
+    print("prepare")
     generator = imageGen.make_generator_model()
-
+    print("generator prepared")
     # Create a random noise and generate a sample
     noise = tf.random.normal([1, 100])
     generated_image = generator(noise, training=False)
